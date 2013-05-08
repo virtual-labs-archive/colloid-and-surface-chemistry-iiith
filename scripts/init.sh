@@ -1,4 +1,5 @@
 #read the file line by line and install
+apt-get update
 FILENAME=$1
 cat $FILENAME | while read LINE
 do
