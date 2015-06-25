@@ -1,0 +1,476 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Electrophoresis of Colloidal Particles
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+<p>
+A colloidal dispersion has been defined as a suspension of small particles in a
+continuous medium. The colloidal dispersion clearly has two phases, one is the
+bulk medium called disperse medium and another phase of the suspended
+particles (aggregates of molecules or single molecules of size 1 µm to 1 nm)
+called the dispersion phase. Colloids have the ability to scatter light and
+they apparently lack osmotic pressure. Bellow we give some examples of colloidal
+systems with the corresponding dispersion phases and disperse medium.
+</p>
+
+<img src="images/intro_image1.png" alt="Table"/>
+
+
+<h3>
+Sol
+</h3>
+
+<p>
+A sol is a colloidal suspension of solid particles in a continuous liquid
+medium. Examples include blood, pigmented ink, and paint. They are
+also known as lyophobic colloids. These are invariably substances that
+are highly insoluble in the dispersing medium. The lyophobic colloids are
+usually aggregates of small molecules. They can be prepared in a colloid
+mill, or by chemical methods like Hydrolysis. They are very sensitive to
+electrolytes.
+</p>
+<h3>
+Gel
+</h3>
+<p>
+Gels are a dispersion of molecules or particles within a liquid in which the
+solid is the continuous phase and the liquid is the discontinuous phase.
+These are solid, jelly-like material that can have properties ranging from
+soft and weak to hard and tough. These are also known as lyophilic
+colloids. Typical lyophilic systems would be proteins (especially gelatin)
+or starch in water, rubber in benzene etc.
+</p>
+
+<h3>
+Emulsion
+</h3>
+
+<p>
+Emulsions are colloids where both the dispersed and the continuous phase are liquid. In an emulsion, one liquid (the dispersed phase) is
+dispersed in the other (the continuous phase). Examples of emulsions include vinaigrettes, the photo-sensitive side of photographic film, milk and
+cutting fluid for metal working.
+</p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+<p>
+To measure the Zeta potential of a given colloid sample.
+</p>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+<h3>
+Structure of colloid
+</h3>
+
+<p>
+The development of a net charge at the particle surface affects the 
+distribution of ions in the surrounding interfacial region, resulting in an increased
+concentration of counter ions (ions of opposite charge to that of the particle)
+close to the surface. Thus an electrical double layer exists around each particle.
+</P>
+
+<p>
+The liquid layer surrounding the particle exists as two parts; an inner region,
+called the Stern layer, where the ions are strongly bound and an outer, diffuse,
+region where they are less firmly attached. Within the diffuse layer there is
+a notional boundary inside which the ions and particles form a stable entity.
+When a particle moves (e.g. due to gravity), ions within the boundary move
+with it, but any ions beyond the boundary do not travel with the particle. This
+boundary is called the surface of hydrodynamic shear or slipping plane.
+The potential that exists at this boundary is known as the Zeta potential.
+</p>
+
+<h3>
+Electrophoresis
+</h3>
+<p>
+When an electric field is applied across an electrolyte, charged
+particles suspended in the electrolyte are attracted towards the electrode
+of opposite charge. Viscous forces acting on the particles tend to oppose
+this movement. When equilibrium is reached between these two opposing
+forces, the particles move with constant velocity. The velocity of a 
+particle in an electric field is commonly referred to as its Electrophoretic
+mobility.
+</p>
+
+<h3>
+Henry Equation
+</h3>
+
+<p>
+Henry Equation is given by
+</p>
+<p>
+U<sub>E</sub>=2εzf(ka)/η
+</p>
+<ul>
+<li>
+z=Zeta Potential
+</li>
+<li>
+U<sub>E</sub>=Electrophoretic mobility
+</li>
+
+<li>
+ε = Dielectric constant
+</li>
+<li>
+η = Viscosity
+</li>
+
+<li>
+f (ka) = Henry's function. Two values are generally used as 
+approximations for the f(ka) determination - either 1.5 or 1.0.
+</li>
+
+</ul>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+<ol>
+<li>
+Take a suspension or a colloidal solution.
+</li>
+
+<li>
+Insert the zetasizer electrode in the suspension taken in a cuvette.
+</li>
+<li>
+Measure the zeta potential.
+</li>
+</ol>
+</div>
+
+      </section>
+      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+      <p><a href="el.html" target="_blank">Click here to go to lab</a></p>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+<h3>
+Pre-Experiment
+</h3>
+<ol>
+<li>
+Why do the colloidal particles in between two electrodes move under an applied field?
+</li>
+<li>
+What are the origins of zeta potential?
+</li>
+<li>What is stern layer?</li>
+<li>What could one say about the stability of a colloidal system from zeta potential values of the system?
+</li>
+</ol>
+<h3>
+Post-Experiment
+</h3>
+<ol>
+<li>
+What principles were used for the measurement of zeta potential in the current experiment?
+</li>
+<li>What kind of current source was used for the measurement of zeta potential and why?
+<li>How does the temperature of the solution affect the zeta potential of system?
+
+</li>
+</ol>
+
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+<ol>
+<li>
+http://www.malvern.com/LabEng/technology/zeta_potential/zeta_potential_LDE.htm
+</li>
+<li>
+Hunter, R.J. "Foundations of Colloid Science", Oxford University Press, 1989 ISBN 0198551894
+</li>
+
+</ol>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

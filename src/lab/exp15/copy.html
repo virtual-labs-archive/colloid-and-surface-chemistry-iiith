@@ -1,0 +1,572 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Kinetics study of a reaction
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+<p>
+Information regarding the kinetics of many reactions has been obtained by using UV-Visible spectroscopy. The progress of a reaction, i.e., change in concentrations of the reactants or products can be followed spectrophotometrically if one of them is a light absorbing substance. Oxidation or reduction reaction of organic dyes can be followed by this absorption spectroscopy method. Some metal particles in their dispersed states show colors. Therefore, their formation from the reduction of metal ions can also be studied by using UV-visible spectrophotometry. In this experiment we study first the formation of different sized gold particles in aqueous surfactant medium and then their use as catalysts in an organic dye reduction. </p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+<p>
+ Application of absorption spectroscopy in following the kinetics of a redox reaction: Gold particle catalyzed reduction of eosin by sodium borohydride.
+</p>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+<p>
+Kinetics of Gold Particle Formation: When light falls on small metal particles, the light can excite collective coherent oscillations of surface electron-gas at the interface of the metal particle and dielectric. This collective coherent oscillation of metal surface electron-gas in metal particles is known as localized surface plasmon resonance (LSPR). LSPR falls in the visible range of electromagnetic spectrum for some metals like gold, silver and copper. Therefore, formation and development of such particles with LSPR property can be studied by using absorption spectroscopy. Metal particles are easily prepared by the reduction of their ions in solutions. For example, addition of sodium borohydride, a reducing agent to a yellow colored aqueous gold (III) ion solution produces purple colored dispersion of gold particles. Silver and gold ions can also be reduced to metallic state in the presence of molecules like Triton-X 100 (TX-100), alcohols, etc. by photoirradiations of their mixtures. In this experiment, TX-100, a neutral surfactant is used as reducing agent cum particle stabilizer. This photoirradiation generates very small gold particles. These small gold particles can be used as seed particles and can be grown into larger sized particles by adding more gold ions and reducing them with the help of a weak reducing agent, such as ascorbic acid (Table 1). A weak reducing agent is necessary in this step so that nucleation (reduction) occurs only on the surface of the seed particles and seed particles grow in sizes but no new particles form via homogeneous nucleation. This ensures the formation of nearly monodispersed particle formation. Nearly spherical colloidal gold particles are purple in color and absorb around wavelength 530 nm
+</p>
+<p>
+The enlargement of particles from seed for the preparation of different sets of gold particles showed sigmoidal shape curve when increase in absorbance is plotted with time. This suggests an autoctalytic growth of the particles. This can be verified by an autocatalytic plot for the development of absorbance with respect to time i.e., ln a/(1-a) vs t where a = At/A∞, with A being absorbance.
+</p>
+<p>
+<b>Kinetics of Gold Particle Catalyzed Reduction of Eosin by Sodium Borohydride:</b> Eosin is an organic water soluble bright red dye used in many applications in biological science, medical science, textile dying, ink manufacturing, etc. Its reduced form is colorless and hence its reduction can be monitored by following the decrease in its absorption peak intensity. Decrease in eosin absorbance was followed at 535 nm wavelength. One does not observe reduction of eosin in aqueous solution by sodium borohydride in the experimental time scale. However, the rate of reduction becomes appreciably faster in the presence of gold particles. Gold particles here act as catalysts. Depending on the catalyzing particle size and concentration (Table 1), the rate of reduction varies. Note that all the sets of particles prepared here have the same amount of total gold (1×10<sup>-4</sup> M).</p>
+<p>
+A pseudo-first order kinetics with respect to eosin, i.e., log(A<sup>t</sup> - A<sup>Au</sup>) vs time could be used in this case, where At stands for absorbance at any time t and AAu that for aqueous gold particle system before the addition of dye. Thus one can determine the values of pseudo-first-order rate constants (k) and corresponding correlation coefficients from these plots. 
+</p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+<p align="justify">
+<ol>
+<li>Preparation of Gold Seed Solution. </li>
+<ol>
+<li>2.94 mL 10<sup>-2</sup> M TX-100 and 0.06 mL 4.975 × 10<sup>-3</sup> M Au-(III) (HAuCl<sub>4</sub>. x H2O) solutions are taken in a 1 cm quartz cuvette.</li>
+<li>The cuvette is kept about 3 cm away from a germicidal (UV) lamp and is irradiated with the UV light for 30 min. </li>
+<li>The yellow colored solution turns purple indicating the formation of fine colloidal gold nanoparticles.</li>
+<li>Turn on the spectrophotometer instrument by clicking on the power button and wait for 30 min for initialization of the instrument.</li>
+<li>Click on the spectrophotometer lid to open it.</li>
+<li>Click on the cuvette to place it in the sample cell holder of the instrument.</li>
+One has to use aqueous TX-100 solution as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown. In this case, one can place the sample in the sample holder (often the front one) and the sample bank or reference in the reference holder (often the back one) simultaneously.</li>
+<li>Run the wavelength scan by clicking on the Computer monitor and then on the Scan button and observe the scan. In the real spectrophotometer, an appropriate wavelength range of incident light for the sample can be chosen and the wavelength scan are run via the accompanied computer software. One can run the scan in absorbance or transmittance mode. The scan data is stored in the computer. If the spectrophotometer is a single beam instrument, then first the sample blank or reference is taken in a cuvette and the wavelength scan is run followed by the sample. One has to subtract the reference data from the sample data for respective wavelengths. </li>
+<li>Collect data by clicking on the Data tab.</li> 
+<li>Plot the absorbance (and transmittance) of the sample at various wavelengths and determine the wavelength of maximum absorption i.e., spectral peak-position. Colloidal gold particles absorb maximum light near wavelength 520 nm.</li>
+
+</ol>
+<li>Preparation of Various-Sized Colloidal Gold Particles and Kinetic Studies of Their Evolution.</li> 
+The seed particles are left generally for 3-4 h before employing them for the generation of larger gold particles. Various sized colloidal gold particles can be prepared by a two-step seed mediated (noniterative) growth method.<br>
+The conditions for preparing gold particles of three different sizes are given in the following table:  <br>
+
+</p>
+<p align="left">
+<b>TABLE 1: Conditions and some characteristics of prepared gold particles</b>
+</p>
+<p align="center">
+    <table width="638" cellpadding="7" cellspacing="1" align="center">
+        <colgroup>
+            <col width="56"/>
+            <col width="127"/>
+            <col width="126"/>
+            <col width="151"/>
+            <col width="159"/>
+        </colgroup>
+        <tbody>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        Sample
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        [seed-Au] /mol.L<sup>-1</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                       [Au<sup>3+</sup>]/mol.L<sup>-1</sup>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        &lambda;<sub>max/nm</sub>
+                    </p>
+                <td width="149">
+                    <p align="LEFT">
+                        λ=350 nm
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        Seed
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        1.00 × 10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        <br>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        522
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="justify">
+                     10 (experimental)
+
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                       Sample 1
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        1.00 × 10<sup>-5</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        9.00 × 10<sup>-5</sup>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        529
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        21.5
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                       Sample 2
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                       3.33 × 10<sup>-6</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        9.67 × 10<sup>-5</sup>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        531
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        31.1
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        Sample 3
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        1.00 × 10<sup>-6</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        9.90 × 10<sup>-5</sup>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        534
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        46.4
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+    </table>
+</p>
+<br>
+<p>
+<ol>
+<li>Turn on the spectrophotometer instrument by clicking on the power button and wait for 30 min for initialization of the instrument.</li>
+
+<li> 	Click on the spectrophotometer lid to open it.</li>
+<li>	Take required quantity of seed particle and Au(III) ions in a test tube and to this add 0.04  mL 10<sup>-2</sup> M ascorbic acid at a time (not drop by drop). </li>
+This results in various-sized gold particles depending on the seed particle to Au(III) ion concentration ratio.</li>
+<li>	Immediately after addition of ascorbic acid, kinetics of particle development from the seed is followed by following the increase in absorbance value at &lambda;=520 nm with time (at 33 +/- 1 °C). </li>
+<li>Click on the cuvette to place it in the sample cell holder of the instrument.</li>
+One has to use water as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown. In this case, one can place the sample in the sample holder (often the front one) and the sample bank or reference in the reference holder (often the back one) simultaneously.</li>
+<li>Run the scan in the kinetics mode by clicking on the Computer monitor and then on the Scan button and observe the scan. In the real spectrophotometer, an appropriate wavelength of light is selected at which increase in absorbance vs. time scan is performed by using the accompanied computer software. </li>
+<li> After the scan, label the sample and leave for ~12 hrs before using them as catalysts. The rate of catalysis was found to be very slow within 3-4 hrs of their preparations.</li>
+<li> Collect data by clicking on the Data tab. </li>
+<li>Plot the absorbance vs. time for the sample. What is the nature of the plot: sigmoidal?</li>
+<li> Attempt an autocatalytic fit of the data.</li>
+</ol>
+</p>
+
+<li>Catalytic Eosin Reduction Kinetics Study.</li>
+<ol>
+<li>Turn on the spectrophotometer instrument by clicking on the power button and wait for 30 min for initialization of the instrument.</li>
+<li>	Click on the spectrophotometer lid to open it.</li>
+<li>	Take 2 mL of a sample containing particles of a given average size and mix 0.04 mL    10<sup>-2</sup> M eosin. To this add 0.4 mL 0.5 M sodium borohydride (NaBH4) solution. </li>
+<li>	Immediately after the addition of NaBH<sub>4</sub>, kinetics of particle catalyzed eosin reduction is followed by following the decrease in absorbance value at &lambda;=535 nm with time (at 30 +/- 1 °C). </li>
+<li>	Click on the cuvette to place it in the sample cell holder of the instrument.</li>
+One has to use water as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown. In this case, one can place the sample in the sample holder (often the front one) and the sample bank or reference in the reference holder (often the back one) simultaneously.</li>
+<li>	Run the scan in the kinetics mode by clicking on the Computer monitor and then on the Scan button and observe the scan. In the real spectrophotometer, an appropriate wavelength of light is selected at which increase in absorbance vs. time scan is performed by using the accompanied computer software. </li>
+<li>	Collect data by clicking on the Data tab. </li>
+<li> 	Plot the absorbance vs. time for the sample. What is the nature of the plot?</li>
+<li> 	Attempt a first order fit of the data.</li>
+</ol>
+</ol>
+
+	</div>
+	
+      </section>
+      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+<p>
+<a href="lab9.html" target="_blank">Click here to go to lab</a>
+</p>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+<h3>
+Pre-Experiment
+</h3>
+<p align="justify">
+<ol>
+        <li>What property of metal particles is used in the study of their formation kinetics?</li>
+        <li>Why do gold particles absorb light?</li> 
+	<li>Why should one use a relatively weak reducing agent like ascorbic acid in the particle enlargement reaction?</li>
+	<li>Why does one need to use gold particles in the reduction of eosin by sodium borohydride?</li>
+        
+    </ol>
+</p>
+<h3>
+Post-Experiment
+</h3>
+<p>
+<ol>
+<li>Do you observe any induction period for the commencement of eosin reduction reaction? </li>
+<li>How do you explain the purple color of dispersed gold particles?</li>
+<li>What happens to the color of gold particles after its participation in the catalysis?</sub> </li>       
+<li>What happens to the color of eosin after its particle catalyzed reduction by sodium borohydride?</li>
+<li>Does the particle enlargement reaction follow autocatalytic growth over the entire duration of development?</li>
+</ol>
+</p>
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+<p>
+<ol>
+<li>T. K. Sau, A. Pal and T. Pal, J. Phys. Chem. B 2001, 105, 9266-9272.</li>
+<li>“Chemical Analysis: Modern Instrumentation Methods and Techniques”, by Francis Rouessac and Annick Rouessac, Second Edition, John Wiley & Sons Ltd (2007).</li>
+<li>Across the Spectrum: Instrumentation for UV/Vis Spectrophotometry by Shane Beck, The Scientist 12[3]:20, Feb. 02, 1998.</li>
+<li>Physical Chemistry by Peter Atkins and Julio De Paula, Publisher: W. H. Freeman & Company (Dec 2009). </li>
+<li>“Absorption and fluorescent properties of fluorescein” by R. Sjöback, J. Nygren and M. Kubista in journal “Spectrochimica Acta Part A 1995, 51, L7 – L21.”</li>
+<li>Handbook of Instrumental Techniques for Analytical Chemistry, Frank A. Settle (Editor), Pearson Education Limited (2004). </li>
+<li>Modern Analytical Chemistry, David Harvey, McGraw-Hill Education (2000).</li>
+<li>Fundamentals of modern UV-visible spectroscopy, Primer, Tony Owen, Agilent Technologies (2000).</li>
+</ol>
+<p>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

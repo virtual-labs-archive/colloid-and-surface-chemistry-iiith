@@ -1,0 +1,28 @@
+#!/bin/bash
+# initialize script for Colloid Surface Chemistry Lab
+
+# initialize script creates the initial environment for the Collid Surface Chemistry
+# Lab by installing the server side dependencies for the lab and invokes the build script.
+# Mention all the server-side dependencies of the lab in
+# dependencies.txt
+
+# Usage of the Script 
+
+# To use initialize script, run the command
+# ./scripts/initialize scripts/dependencies.txt 
+# initialize script takes dependencies.txt as an argument and installs the
+# packages mentioned in the dependencies.txt file. 
+
+#to update the packages
+apt-get update
+
+#read the file line by line and install
+FILENAME=$1
+cat $FILENAME | while read LINE
+do
+apt-get install -y $LINE
+echo "no.of lines"
+done
+
+# invoke the build script
+./scripts/build
