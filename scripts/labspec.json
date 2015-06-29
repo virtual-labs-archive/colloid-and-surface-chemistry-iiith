@@ -53,7 +53,7 @@
                 "Chemical Sciences"
             ], 
             "id": "ccnsb02", 
-            "integration_level": 5, 
+            "integration_level": 6, 
             "name": "Colloid and Surface Chemistry", 
             "server-side": true, 
             "status": "Released", 
