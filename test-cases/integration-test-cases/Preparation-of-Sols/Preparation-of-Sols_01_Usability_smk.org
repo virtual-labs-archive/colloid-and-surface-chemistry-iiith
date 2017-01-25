@@ -1,0 +1,42 @@
+#+Title: Test case
+#+Date: 25 Jan 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + The usability of the Experiment should be flexible. 
+     
+* Pre conditions
+
+  1. Open the url vlabs.ac.in and vlabs Home page will be displayed.
+  2. Click on IIIT Hyderabad and a list of labs will be displayed on
+     the screen.
+  3. Select "Colloid and Surface Chemistry" Lab, it will redirect to the Home
+     page where a list of experiments will be displayed on the screen.
+  4. Click on "Preparation of Sols" experiment.
+
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  While testing observe for easiness to use the features of the experiment
+
+  1.  Information to use the experiment.
+  2.  Navigation
+  3.  Look and Feel
+
+* Expected result
+
+   +  Experiment should be user friendly.
+
+* Review/comments
