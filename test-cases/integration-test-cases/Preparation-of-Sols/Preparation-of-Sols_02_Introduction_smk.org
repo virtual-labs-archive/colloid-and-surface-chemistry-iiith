@@ -16,7 +16,7 @@
 
 * Pre Conditions
 
-  + Refer to the first test case [[https://github.com/Virtual-Labs/molecular-florescence-spectroscopy-responsive-lab-iiith/blob/master/test-cases/integration_test-cases/Demonstration-of-pH-Effect-on-Fluorescence-Excitation-and-Emission-Spectra-of-a-Fluorophore/Demonstration-of-pH-Effect-on-Fluorescence-Excitation-and-Emission-Spectra-of-a-Fluorophore_01_Usability_smk.org][Demonstration-of-pH-Effect-on-Fluorescence-Excitation-and-Emission-Spectra-of-a-Fluorophore_01_Usability_smk.org]]
+  + Refer to the first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/integration-test-cases/Preparation-of-Sols/Preparation-of-Sols_01_Usability_smk.org][Preparation-of-Sols_01_Usability_smk.org]]
 
 * Test Steps
 

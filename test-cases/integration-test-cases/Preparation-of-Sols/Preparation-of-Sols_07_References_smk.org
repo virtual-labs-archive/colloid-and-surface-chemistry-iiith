@@ -1,0 +1,37 @@
+#+Title: Test case
+#+Date: 25 Jan 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  +  To view the References of "Preparation of Sols" experiment
+
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/integration-test-cases/Preparation-of-Sols/Preparation-of-Sols_01_Usability_smk.org][Preparation-of-Sols_01_Usability_smk.org]]
+
+* Post conditions
+
+  +  Nil
+
+* Test Steps
+
+  +  Click on the "References" link
+  +  Check if there are any distortions, spelling mistakes and junk
+     characters in the References section
+
+* Expected result
+
+  +  References section should be displayed on the screen.
+  +  Content should be present with no distortions, spelling mistakes
+     and Junk characters
+ 
+* Review/comments
