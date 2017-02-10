@@ -1,0 +1,35 @@
+#+Title: Test Case
+#+Date: 10 Feb 2017
+#+Author: Sravanthi. B
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  +  To check the functionality of "Preparation of Sols" experiment.
+
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/sample-integration-test-cases/Preparation-of-Sols/Preparation-of-Sols_01_Usability_smk.org][Preparation-of-Sols_01_Usability_smk.org]]
+
+* Post conditions
+
+  +  Nil
+
+* Test Steps
+
+  +  Click on the "Click here to go to lab" link
+  +  Check the functionality of the "Pipette".
+
+* Expected result
+
+  1. A new tab with the experiment should be opened. 
+  2. On click, The pipette should consume the solution and on click,
+     should drop the solution in the flask.
+* Review/comments

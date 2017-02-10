@@ -1,0 +1,46 @@
+#+Title: Test Case
+#+Date: 10 Feb 2017
+#+Author: Sravanthi. B
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  +  To check the functionality of "Preparation of Sols" experiment.
+
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/sample-integration-test-cases/Preparation-of-Sols/Preparation-of-Sols_01_Usability_smk.org][Preparation-of-Sols_01_Usability_smk.org]]
+
+* Post conditions
+
+  +  Nil
+
+* Test Steps
+
+  +  Click on the "Click here to go to lab" link
+  +  Check whether all the animations are working according to the
+     procedure. 
+
+* Expected result
+
+  1. A new tab with the experiment should be opened. 
+  2. Water should be poured from the flask in to the beaker.
+  3. Powdered FeCl3 should be appeared on the screen.
+  4. On click the powdered Fecl3, should be collected and dropped with
+     the help of a spoon.
+  5. While mixing the powdered FeCl3, bubbles should be appeared in the
+     beaker.
+  6. Color of the solution in the beaker should be changed. 
+  7. Magnetic bead should be dropped in the conical flask. The Bead
+     should make reactions inside the flask ie, bubbles should be
+     present.
+  8. Animation for the Solutions should be present as the end result. 
+
+* Review/comments
