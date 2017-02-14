@@ -1,0 +1,39 @@
+#+Title: Test case
+#+Date: 14 Feb 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  +  To view the Further Readings of "Demonstration of the Surface Tension Lowering of Water by Soaps/Detergents" experiment
+
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/sample-integration-test-cases/Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents/Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents_01_Usability_smk.org][Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents_01_Usability_smk.org]]
+
+* Post conditions
+
+  +  Nil
+
+* Test Steps
+
+  +  Click on the "Feedback" link from the Menu.
+  +  Check if there are any distortions, spelling mistakes and junk
+     characters in the Further Readings section.
+  +  Click on the Feed back link provided in the feedback section. 
+
+* Expected result
+
+  +  Feedback section should be displayed on the screen.
+  +  Content should be present with no distortions, spelling mistakes
+     and Junk characters
+  +  The Link should navigate to the feedback form page. 
+ 
+* Review/comments

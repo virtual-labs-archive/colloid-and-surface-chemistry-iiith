@@ -1,0 +1,40 @@
+a#+Title: Test case
+#+Date: 14 Feb 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  +  To check the functionality of the links in References page
+     of "Demonstration of the Surface Tension Lowering of Water by Soaps/Detergents" experiment
+
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/sample-integration-test-cases/Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents/Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents_01_Usability_smk.org][Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents_01_Usability_smk.org]]
+
+
+* Post conditions
+
+  +  Nil
+
+* Test Steps
+
+  +  Click on the "References" link
+  +  Check whether all the reference links given in the References
+     page are assigned and are navigating to the concerned
+     page or not.
+
+* Expected result
+
+  +  References section should be displayed on the screen.
+  +  All the reference links given in the References page should assigned and navigating to the concerned
+     page .
+
+* Review/comments

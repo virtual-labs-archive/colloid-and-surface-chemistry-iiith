@@ -1,0 +1,33 @@
+#+Title: Test case
+#+Date:: 14 Feb 2017
+#+Author: Sravanthi. B
+
+* Environment
+  
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To view the introduction section of "Demonstration of the Surface Tension Lowering of Water by Soaps/Detergents" experiment
+
+* Pre Conditions
+
+  + Refer to the first test case [[https://github.com/Virtual-Labs/colloid-and-surface-chemistry-iiith/blob/master/test-cases/sample-integration-test-cases/Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents/Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents_01_Usability_smk.org][Demonstration-of-the-Surface-Tension-Lowering-of-Water-by-Soaps-Detergents_01_Usability_smk.org]]
+
+* Test Steps
+
+  1. Click on Introduction link.
+  2. Check whether any distortions, spelling mistakes and
+     junk characters are present in the Introduction section.
+
+* Expected Result
+
+  1. Introduction section should be displayed on the screen.
+  2. Content should be present with no distortions, spelling mistakes and
+     junk characters.
+
+* Reviews/Comments
