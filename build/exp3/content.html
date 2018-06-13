@@ -1,0 +1,400 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Demonstration of the Preparation and Use of Association Colloids (Micelles)
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	  <p>
+	Soaps and detergents are known as <B>surf</B>ace-<B>act</B>ive <B>a</B>ge<B>nts</B> (also in short as <B>surfactants</B>). They have also been called as amphiphiles, tensides or paraffin-chain salts. Detergents e.g., sodium dodecyl sulfate or sodium lauryl sulfate (SDS or SLS: CH<sub>3</sub>(CH<sub>2</sub>)<sub>11</sub>OSO<sub>3</sub><sup>–</sup>Na<sup>+</sup> cetyltrimethylammonium bromide (CTAB: CH<sub>3</sub>(CH<sub>2</sub>)<sub>14</sub>CH<sub>2</sub>N<sup>+</sup>(CH<sub>3</sub>)<sub>3</sub>Br<sup>+</sup> ), Triton-X 100, etc. are synthetically prepared amphiphiles or surfactants. Soaps are salts of long-chain fatty acids, as for example, sodium salt of stearic acid: C<sub>17</sub>H<sub>35</sub>COO<sup>–</sup>Na<sup>+</sup>. Fatty acids with 18 or more carbon chains form insoluble soap and less than 10 carbon chain fatty acids are also not used in soaps because of their unpleasant odours and skin irritation properties.
+<br><br>
+Surfactant molecules have two parts: a nonpolar part, made of chains of carbon atoms (usually 8 – 18 in number), called <I>tail</I> and a polar or ionic part, called <I>head</I> group. Therefore, the nonpolar tail part of such molecules has an affinity for nonpolar media whereas the polar or ionic  part has an affinity for polar media. In other words, the surfactant molecules have a solvent loving and a solvent hating part whether the solvent is a polar or nonpolar one. These molecules are therefore known as <I>amphiphilic</I> or <I>amphipathic</I> molecules. If the solvent is polar water, the hydrophobic tails are water repelling whereas the head group is hydrophilic or water loving in nature. There can be a number of structurally different amphiphilic molecules depending on the length of the hydrophobic tail and the nature of the head group and its position along the backbone. The polar head group may be nonionic, cationic, anionic or zwitterionic. A few examples of such molecules are as follow:
+<br><br>
+Nonionic Surfactant where Head Group is Polar:<br>
+e.g., polyoxyethylene octyl phenyl ether (Triton X-100 or TX-100): 
+H<sub>3</sub>C–C(CH<sub>3</sub>)<sub>2</sub>–CH<sub>2</sub>–C(CH<sub>3</sub>)<sub>2</sub>–C<sub>6</sub>H<sub>4</sub>–O–(CH<sub>2</sub>CH<sub>2</sub>O)<sub>m</sub>–H  (where m = 9 to10)
+<br><br>
+Cationic Surfactant where Head Group is Cationic:<br>
+e.g., Hexadecyltrimethyl ammonium bromide: CH<sub>3</sub>(CH<sub>2</sub>)<sub>15</sub>–N<sup>+</sup>(CH<sub>3</sub>)<sub>3</sub>Br<sup>–</sup><br>
+Dodecylamine hydrochloride CH<sub>3</sub>(CH<sub>2</sub>)<sub>11</sub>NH<sub>3</sub><sup>+</sup>Cl<sup>–</sup>
+<br><br>
+Anionic Surfactant where Head Group is Anionic:<br>
+e.g., Sodium dodecyl sulphate: CH<sub>3</sub>(CH<sub>2</sub>)<sub>11</sub>–OSO<sub>3</sub><sup>–</sup>Na<sup>+</sup><br>
+Sodium stearate: CH<sub>3</sub>(CH<sub>3</sub>)<sub>16</sub>COO<sup>–</sup>Na<sup>+</sup><br>
+<br><br>
+Zwitterionic (Ampholytic) Surfactant has both Cationic and Anionic Head Groups:<br>
+e.g., Cocamidopropyl betaine: CH<sub>3</sub>(CH<sub>2</sub>)<sub>10</sub>C(O)N(H)CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>N<sup>+</sup>(CH<sub>3</sub>)<sub>2</sub>CH<sub>2</sub>CO<sub>2</sub><sup>–</sup>
+<br><br>
+When dissolved in a polar solvent like water, surfactant molecules accumulate at the surface (interface) of the two fluids and modify the properties of the surface (for example, reduce the surface tension of water). These molecules are therefore known as <B>surf</B>ace-<B>act</B>ive <B>a</B>ge<B>nts</B> (also briefly as <B>surfactants</B>). Surfactants find many applications in our day-to-day life to the industry. For example, sodium lauryl sulphate is a synthetic anionic detergent used in toothpastes, shampoos, and laundry soaps. Many cationic and non-ionic detergents are used in hair conditioners and ‘no tear shampoo’. Many cationic detergents have germicidal properties and are used in hospital disinfectants, mouthwashes and certain eye-wetting solutions. High concentration surfactant solutions are used as drug carriers and micro-reactors for chemical synthesis and in froth flotation, petroleum recovery, etc.
+</p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+<p>
+To demonstrate how micelles, one kind of association colloids, form and participate in the cleansing action of soap and detergents.
+</p>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+	<p>
+When initially a small quantity of surfactant is added in water, the surfactant molecules initially form a monolayer at the water surface by orienting themselves almost in parallel fashion with the water-repelling nonpolar tails away from the water surface whereas the polar/ionic head groups interacting with the polar water molecules. If one attempts to dissolve more and more such amphipathic molecules, the temperature of the solvent should be more than the <I>Kraft temperature</I>. The solubility of surfactants in water depends on the temperature. The solubility of ionic surfactants rapidly increases above a particular temperature, called the <I>Kraft temperature (Kraft point)</I>. The surfactant’s nonpolar chains “melt” at this temperature.  Above the <I>Kraft temperature</I>, if one dissolves more and more of surfactants, above a particular concentration, called <I>critical micelle concentration</I> (CMC), tens to hundreds of these molecules cluster together forming colloid-sized aggregated structures that remain in dynamic equilibrium with monomers (free surfactant molecules) in solution. These aggregated structures which have nonpolar tails pointing inward away from the polar solvent and polar head groups pointing outward towards the polar solvent like water are called micelles. The aggregate structure is reversed in an nonpolar organic solvent and is known as <I>reverse(d) micelles or inverted micelles</I>. The CMC is about 10<sup>-4</sup> to 10<sup>-3</sup> mol/L. The number of surfactant molecules that form the micelle is called the aggregation number. The aggregation number can be 1000 or more for nonionic surfactant molecules but it is limited to 10 to 100 for ionic surfactants due to Coulomb repulsions between ionic head groups. For example, sodium dodecyl sulfate (SDS) or sodium lauryl sulfate (SLS) micelle in water has a CMC 8.1×10<sup>-3</sup> mol/L and an aggregation number of ~80. Since the surfactant molecules self-assemble to form micelles having colloidal dimensions, micelles are known as association colloids. Micellar solutions scatter light that causes cloudy appearance in the soapy water. Micellar solutions are microheterogeneous media.
+</p><p>
+In water, the nonpolar hydrocarbon tails of the surfactant molecule being water repellent tend to orient away from water while the head groups being water loving interact with water. Initially when a small quantity of surfactant is added to water, the surfactant molecules form a monolayer at the water surface by orienting themselves almost in parallel fashion with the polar/ionic head groups interacting with the polar water molecules whereas the hydrophobic tails pointing away from the water surface. On increasing the quantity of the surfactants in water, above a critical concentration, the hydrophobic tail groups of tens to few hundred molecules cluster together. This results in the formation of an oily core with their hydrophilic head groups interacting with the polar water molecule (Figure 1). This kind of structure minimizes the repulsive interactions between the tail group and the solvent molecule and maximizes the attractive interactions between the head group and the solvent molecule. Thus, micelles form by a balance of forces like the water repelling hydrophobic forces associated with alkyl tail that promotes aggregation and the electrostatic repulsions of the ionic/polar head groups that inhibit aggregation. In the cases of an ionic surfactant, the charged head groups along with a fraction of the counter-ions constitute the Stern (or palisade) layer surrounding the core. The less tightly bound remainder of the counter-ions form another layer, the Gouy-Chapman layer that extends several hundred angstroms from the Stern layer into the solution. The shapes of the micelles depend on the surfactant concentration, molecular structures, etc. The shapes range from flattened spheres near CMC to cylindrical rods at higher concentrations. Micelles have both hydrophilic and hydrophobic regions. Micelles can therefore ‘‘solubilize’’ oil or nonpolar hydrophobic molecule to a limited extent in their oily interior. This property is used to disperse oil-soluble vitamins and similar oil-soluble solutes in water. On the other hand, small water-pools of the reverse micelles can also dissolve small quantity of water-soluble substances, such as proteins, in oil media. Transmission electron microscopy (TEM), light scattering, small angle neutron scattering, spectroscopy, surface tension measurements, etc. are used to characterize micelles.
+</p>
+<p>
+<B>Figure 1.</B> Schematic representations of structures of (a) a surfactant molecule, SDS, and its stick diagram and (b) a partial cross-sectional view of an aqueous (normal) micelle.
+</p>
+<p>
+Depending on the structure of the surfactant molecules, micelles can be classified as nonionic, cationic, anionic, or zwitterionic micelles, if the head groups of the micelle forming molecules are nonionic, cationic, anionic or zwitterionic, respectively. Triton X-100, CTAB (cetyltrimethylammonium bromide), and SDS are examples of nonionic, cationic, and anionic surfactants, respectively.
+</p>
+<p>
+<B>Cleansing action of soap and detergents.</B> Detergency is an inherent property of amphiphiles. Surfactant molecules present in soaps and detergents are responsible for cleansing actions. Surfactant molecules used in soaps are sodium or potassium salts of various naturally occurring fatty acids. The properties of soaps depend on the length of the carbon chain of the fatty acid and the salt forming metal ions. For example, the potassium salts of the fatty acids produce a softer lather. Detergents are mostly synthetic ionic molecules. The core of the micellar structure is nonpolar in nature whereas the area near the head groups is polar in nature. Due to this dual nature, micelles can dissolve organic, nonpolar substances in its core as well as polar substances near the head groups. The cleansing action of soaps and detergents is based upon their ability to form micelles and dissolving oily, greasy materials into their cores. 
+</p>
+<p>
+Cleansing action occurs through the following steps. Dirt is often greasy or oily matters. Surfactant molecules reduce the surface tension of water that helps water to spread on the skin, fabrics, etc. Water cannot penetrate greasy or oily dirt matters due to their hydrophobic natures. The non-polar hydrocarbon tail of the surfactant molecules start interacting with the greasy or oily matters while the polar/ionic head groups sticking out of the oil droplets interact with water molecules. This pulls out the dirt matters into the water. Thus micelles formed from soap or detergent molecules trap dirt particles and get separated from skin or fabric and pass into washing solvent, water. The surface of each oily dirt particle becomes charged because of the head group charge of the surfactant molecules. This causes repulsions among the oily particles which help the particles to remain suspended in solution and to be washed away by the stream of water. Hard water that contains ions like calcium, magnesium, etc. does not form leather easily because these ions form insoluble scum by combining with the soap and detergent molecules.
+</p>
+	</div>
+	
+      </section>
+
+	      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+      <p>
+      <a href="clean.html" target="_blank">Click here to go to lab</a>
+      </p>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+<ol>
+<br>
+<B>Pre-experiment Quiz</B>
+<li>
+How do stable assemblies of micelles form though the ionic head groups are supposed to repel each other?
+</li>
+<li>
+How will the surface tension of a solution vary with the increase in surfactant concentration and why?
+</li>
+<li>
+What will be the effects of larger head groups on micellar structure and aggregation number?
+</li>
+<li>
+The aggregation numbers for nonionic surfactant molecules are often more than that for ionic surfactants. Why?
+</li>
+<li>
+Which ion, the cation or the anion, of an anionic surfactant will reduce the surface tension of water when dissolved in it?
+</li>
+<br>
+<B>Post-experiment Quiz</B>
+<li>
+Can one prepare ionic micelle below the Kraft Temperature?
+</li>
+<li>
+Will there be formation of micelles if one dissolves more than the CMC of a surfactant all at once (not little by little) in water?
+</li>
+<li>
+Once micelles have formed, can surfactant molecules of the micelle exchange with those of other micelles or free surfactant molecules present in solution?  
+</li>
+<li>
+Why do the organic substances dissolve into the core of the micelles?
+</li>
+<li>
+Typically do the soaps/detergents form lather easily in surface water or in bore-well water and why?
+</li>
+</ol>
+
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+     <ol>
+<li>
+http://en.wikipedia.org/wiki/Surfactant
+</li>
+<li>
+http://nsdl.niscair.res.in/bitstream/123456789/311/1/PDF+corrected+surface+chemistry.pdf
+</li>
+<li>
+http://www.elmhurst.edu/~chm/vchembook/554soap.html
+</li>
+<li>
+P.W. Atkins and Julio de Paula, Physical Chemistry, Oxford University Press, 7th ed., (2002).
+</li>
+<li>
+Y. Moroi, Micells, Springer (2005).
+</li>
+<li>
+J. W. McBain, Colloid Science, D.C. Heath and Company, Boston (1950).
+</li>
+<li>
+R. J. Hunter, Foundation of Colloid Science, Oxford University Press (2000).
+</li>
+<li>
+P.C. Hiemenz and R. Rajagopalan, Principles of Colloid and Surface Chemistry, Marcel Dekker Inc., New York (1997).
+</li>
+
+</ol>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

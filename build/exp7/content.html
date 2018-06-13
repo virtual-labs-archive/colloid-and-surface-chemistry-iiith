@@ -1,0 +1,546 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Gel Electrophoresis
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+<p>
+Electrophoresis is an electrokinetic phenomenon. It involves movement of charged dispersed particles with respect to the dispersion medium under the influence of a spatially uniform electric field. Ferdinand Frederic Reuss reported observation of this phenomenon for the first time in 1807. Electrophoresis of positively charged particles or cations is termed as cataphoresis and similarly the electrophoresis of negatively charged particles or anions is termed as anaphoresis. Electrophoresis phenomenon provides an anlytical technique for the separation of charged particles/molecules by applying electric field. These days electrophoresis is often conducted by using agar or polyacrylamide gels as media and the technique is known as 'gel electrophoresis'. Gel electrophoresis technique is often used in biotechnology and forensic laboratories for separation of biological macromolecules such as DNA, RNA, protein, etc. This has also been used for the size separation (based on mass to charge ratio) of nanoclusters and nanoparticles. 
+
+</p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+<p>
+To (i) develop familiarity with the procedures of a gel electrophoresis technique for the separation of molecules; (ii) separate several dyes of different molecular sizes and charges and (iii) determine the components of an unknown dye mixture by using agar gel electrophoresis.
+
+</p>
+
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+<P>
+<p>
+Suppose a particle with charge, +Q, is moving toward the negative electrode (cathode) in a nonconducting medium under an electric field, E. Two opposing forces act on the particle: the force exerted by the field, FE = QE, in the direction of the motion toward the cathode, and the frictional force, Ffr, retarding its motion toward the cathode. Under this condition, if the particle with charge, +Q, moves at a constant velocity (the acceleration, a, of the particle is 0) toward the cathode, the net force Fnet on the particle is zero (since F = ma). But 
+</p>
+
+<center> F<sub>net</sub> = F<sub>e </sub>+ F<sub>fr</sub> = 0 </center>
+<p>
+The frictional force is given by, F<sub>fr</sub> = -f<sub>v </sub>, where f is a constant called the frictional coefficient and v is the velocity of the particle. The frictional coefficient, f, depends on the size and shape of the molecule. For a spherical particle the frictional coefficient is given by f = 6 &Pi;&eta;R<sub>s, </sub>
+where &eta; is the coefficient of viscosity and R<sub>s</sub> (Stokes radius) is the radius of the hydrated sphere.  
+</p>
+<p>
+From the above equations, one obtains
+f<sub>v</sub> = QE,
+	
+or 	U (electrophoretic mobility) = v/E = Q/f = Q/6&Pi;&eta;R<sub>s, </sub>
+
+</p>
+<p>
+The above equation shows that the electrophoretic mobility, U, is directly proportional to the charge (Q) and inversely proportional to the particle size (Rs) and the coefficient of viscosity (?) of the medium. Q/Rs is also known as the charge density of the particle. Thus the electrophoretic mobility in a given medium varies depending on the charge density of the particles. The direction of particle movement under an applied field depends on the nature of electric charge on the particle (positively charged particles to the cathode and the negatively charged ones to the anode). Since under an electric field the directions and rates of motion of particles in a medium vary depending on their charges and charge densities, application of the electric field for a given period of time could result in completely different displacements for different particles. This forms the basis of separation of charged particles via electrophoresis. 
+</p>
+<p>
+In gel electrophoresis, the particles to be separated are placed in wells of a gel medium and an electric field is applied to the medium which results in separated bands of particles. It should be noted that the above equations deal with spherical particles. In addition to the size and charge, the rate of particle movement depends on its shape and the density of the gel through which it moves. Gels which have porous network structures allow movement of solvent and solute particles through the pores. This helps to eliminate thermal convection forces in the liquid medium which would interfere with the separation process. The pore size and the network structure of the gel provide an additional sieving mechanism by retarding the motion of particles/molecules that increases the resolving power of this separation technique. Further, gels can maintain the finished separation over a long period of time that is necessary for many post electrophoresis operations.
+</p>
+<p>
+A gel electrophoresis system has following basic components: a D. C. power supply unit, an electrophoresis chamber, gel casting trays, glass slides, and well forming templates called combs. The casting tray is used for casting gels. The gel forming material is poured in the tray as a hot liquid which forms semi-solid gel on cooling. In order to slide the finished gel out of the casting tray, the glass plate is placed at the bottom of the tray. The comb is used to create wells in the gel. It is placed in slots provided on the side or middle of the casting tray before the hot gel forming material is poured into the tray. The teeth of the comb leave small grooves or wells in the gel medium when it is taken out carefully after the gel solidifies. The wells are places where samples of particles to be separated are added.
+</p>
+<p>
+Agar gel electrophoresis is one of the most commonly used methods of the various types of electrophoresis. Agar gel electrophoresis is widely used in separating fragments of DNA. The gel is made by first melting agar powder in boiling buffer solution and then cooling in a casting mould. The solidified gel medium is submerged in a buffer-filled electrophoresis chamber. The buffer not only controls the required pH of the medium but also serves as a conductor of electricity. Prior to connecting the electrophoresis apparatus to a direct current (D.C.) power source for applying a required voltage, the samples are delivered into the sample wells with appropriate transfer pipettes. Charged particles enter the gel through the walls of the wells and separate into one or more distinct bands, one band per component, during the migration.
+</p>
+<p>
+In order to identify the locations and the size of bio-macromolecules, staining of biomolecules is required. Various dyes are used for this purpose. Bromophenol Blue, Janus Green, Orange G, Safranin O and Xylene Cyanol are examples of dyes that are often used in gel electrophoresis. In addition to different colours, some of these dyes (such as Bromophenol Blue, Xylene cyanol, and Orange G) acquire negative charges and migrate with speeds almost similar to various sized DNA fragments. Therefore, these dyes have been used as fairly accurate size indicators for small DNA fragments. Here we shall run gel electrophoresis of these five dyes and a two-component dye mixture. This allows the progress of the electrophoresis run and the migration of the coloured dyes in the gel to be visualized directly due to their distinct colours. It is to be noted that one should view the results of dye electrophoresis immediately after the completion of the run, because the dye molecules due to their relatively small sizes rapidly diffuse out of the gel. 
+</p>
+
+<table style="width: 80%">
+  <tr>
+    <th>Lane #</th>
+    <th>Dye</th>		
+    <th>Molecular Formula</th>
+    <th>Molar Mass (g/mol)</th>		
+    <th>Nature of Charge</th>		
+    <th>Approx. Distance <br/> Migrated (mm)</th>		
+
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Bromophenol Blue</td>		
+    <td>C<sub>19</sub>H<sub>10</sub>Br<sub>4</sub>O<sub>5</sub>S</td>
+    <td>670.0</td>
+
+  </tr>
+  <tr>
+<td>2</td>
+    <td>Janus Green</td>		
+    <td>C<sub>30</sub>H<sub>31</sub>N<sub>6</sub>Cl</td>
+<td>511.1</td>
+  </tr>
+  <tr>
+<td>3</td>
+    <td>Orange G</td>		
+    <td>C<sub>16</sub>H<sub>10</sub>N<sub>2</sub>O<sub>7</sub>S<sub>2</sub>Na</td>
+<td>429.4</td>
+  </tr>
+  <tr>
+<td>4</td>
+    <td>Safranin O</td>		
+    <td>C<sub>20</sub>H<sub>19</sub>N<sub>4</sub>Cl</td>
+<td>350.88</td>
+  </tr>
+  <tr>
+<td>5</td>
+    <td>Xylene Cyanol</td>		
+    <td>C<sub>27</sub>H<sub>31</sub>N<sub>2</sub>O<sub>6</sub>S<sub>2</sub>Na</td>
+<td>566.71</td>
+  </tr>
+  <tr>
+<td>6</td>
+    <td>Dye Mixture</td>		
+    <td>...</td>
+<td>...</td>
+  </tr>
+
+  </tr>
+</table>
+
+</p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+<p>
+<strong>To start the experiment do the following:</strong>
+<ol>
+
+<li>
+	To make 100 ml of gel, take 1.0 g of agar powder in a 250 mL glass beaker and add 100 mL 1xTBE (Tris/Borate/EDTA) buffer to it (1% weight/volume agar gel). Heat in the microwave oven until the agar powder completely melts. (Refer to agar gel preparation experiment.) 
+</li>
+
+<li>
+	Place appropriate comb at the middle slot of the tray for making wells at the centre of the gel. 
+</li>
+
+<li>
+	Cool down the hot agar solution to ~60<sup>O</sup>C and then carefully pour it into the tray until the solution covers about 1/3 length of the teeth of the comb. Pull air bubbles, if any, towards the edges of the tray with help of a micropipette tip. Initial clear hot solution turns slightly opaque on setting into semi-solid gel.  
+</li>
+
+<li>
+	Remove the comb carefully after the gel solidifies. 
+
+</li>
+
+<li>
+	Place the gel tray into the electrophoresis chamber.
+
+</li>
+
+<li>
+Gently pour 1xTBE buffer solution into each side of the chamber until the buffer just barely covers the top surface of the gel. If the gel tray or gel floats up, gently press down on the edges of the gel/tray until it sinks down to the platform.
+
+</li>
+
+<li>
+Take 10 &mu;L of each dye including the dye mixture from the dye kit and load into one of the sample wells with the help of a micropipette. Note down the well/lane number and the name of the dye loaded into it. Each time use a new pipette tip to avoid contamination. The dye kit contains the following dyes: Bromophenol Blue, Janus Green, Orange G, Safranin O, Xylene Cyanol and a dye mixture (Table 1).
+</li>
+
+<li>
+	One should place the lid of electrophoresis chamber in position before connecting the wires to the power supply (here it is not shown). 
+</li>
+
+<li>
+Connect the electrodes to the power supply (with the power supply off). Match the red wire (positive end) to the red receptacle (positive) and the black wire (negative end) to the black (negative) receptacle. 
+</li>
+
+<li>
+Turn on the power supply and set the voltage to appropriate (constant) value. Do not touch or remove the chamber lid while the electric current is on.
+</li>
+
+<li>
+Observe the movement of the dyes within the gel. Continue electrophoresis run until the fastest moving dye has migrated near to (~1 cm from) the end of the gel. </li>
+
+<li>
+	Turn off the power and disconnect the wires. 
+
+</li>
+
+<li>
+	Before removing the lid, one should label the positive and negative ends of the gel and the lane number 1 to 5. 
+</li>
+
+<li>
+	Removing the lid (not shown here) record the direction of movement and displacement of each dye from the origin (see Table 1).
+
+</li>
+
+<li>
+	Group the dyes based on the nature of the electrical charges adopted under the experimental conditions.
+
+</li>
+
+<li>
+	Assuming unit charge, list the dyes in order of increasing molecular size.
+
+</li>
+
+<li>
+	Identify the components of the unknown dye mixture.
+
+</li>
+
+</ol>
+</p>
+	</div>
+	
+      </section>
+      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+      <p>
+<a href="Gel_total.html" target="_blank">Click here to go to lab</a>
+</p>
+
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+<h3>
+Pre-Experiment
+</h3>
+<p>
+<ol>
+<li>
+How can the size of the molecules be determined from their migration distance on the finished gel?
+</li>
+<li>	Is there any direct relationship between the molar mass and the size of these dye molecules? Illustrate.</li>
+<li>	What was direction of electron flow through the gel?</li>
+<li>Why should one not touch the gel while the electrophoresis was running?</li>
+<li>Can one use an alternating current (A.C.) power supply source for gel electrophoresis? Why?</li>
+<li>Why do the charged particles in a well move during electrophoresis run?</li>
+<li>What are the effects of variations in the applied voltage on the gel electrophoresis? </li>
+<li>What is the function of the comb?</li>
+
+</ol>
+</p>
+<h3>
+Post-Experiment
+</h3>
+<p>
+<ol>
+<li>	Why does one see bubbles coming out in the electrode chambers?</li>
+<li>Why had all the dyes not moved in the same direction through the gel?</li>
+<li>Which of the dyes moved to the positive end of the gel? </li>
+<li>What is the electrical charge adopted by Orange G under the experimental condition?</li>
+<li>Which of the dyes were positively charged under the experimental condition?</li>
+<li>Can one say which dye molecule has most likely the smallest size? </li>
+<li>What would happen if one had placed the comb on the end/side slot of the casting tray?</li>
+<li>If you wanted to run only DNA samples through the gel, where would you prefer to place the comb - on the middle or end slot of the tray and what should be the arrangement of the loading wells with respect to the electrodes?</li>
+</ol>
+</p>
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+<p>
+<ol>
+<li>	http://en.wikipedia.org/wiki/Electrophoresis</li>
+<li>	http://education.llnl.gov/bep/science/11/tsep.html</li>
+<li>	http://learn.genetics.utah.edu/content/labs/gel/</li>
+<li>	http://employees.csbsju.edu/hjakubowski/classes/ch331/Techniques/TechElectrophoresis.htm</li>
+<li>http://people.hsc.edu/faculty-staff/edevlin/edsweb01/courses/Genetics/labmanual/ electrophoresis.htm</li>
+<li>	http://www.chem.purdue.edu/teacher/table_of_contents/Gel%20Electrophoresis/DYE_ELEC.5.11.96.pdf</li>
+<li>	http://www.apsnet.org/edcenter/K-12/TeachersGuide/PlantBiotechnology/Pages/ Activity2.aspx</li>
+<li>	http://www.accessexcellence.org/AE/AEPC/WWC/1993/moving.php</li>
+<li>	http://learn.genetics.utah.edu/content/labs/gel/</li>
+<li>	http://tanakalab.iis.u-tokyo.ac.jp/research/FPD_Sim-Col_E.html</li>
+<li>	http://learn.genetics.utah.edu/content/labs/gel/electrophoresis/</li>
+<li>	http://en.wikipedia.org/wiki/Gel_electrophoresis</li>
+<li>	http://biotech.biology.arizona.edu/labs/Electrophoresis_dyes_teach.html</li>
+<li>	EDVO-Kit # 101: Principles and Practice of Agarose Gel Electrophoresis. The Biotechnology Education Company  www.edvotek.com</li>
+<li>	http://www.methodbook.net/dna/agarogel.html</li>
+<li>	http://www.agargel.com.br/agar-tec-en.html</li>
+<li>	http://biology.clc.uc.edu/fankhauser/labs/genetics/DNA_Electrophoresis/DNA_Electrop-horesis.htm</li>
+<li>http://abe.leeward.hawaii.edu/Protocols/DNA%20Gel%20Preparation%20and%20Electrophoresis.htm</li>
+
+</ol>
+</p>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>
