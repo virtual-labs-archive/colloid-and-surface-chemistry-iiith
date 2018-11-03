@@ -22,7 +22,7 @@
  *  limitations under the License.
  */
 
-if (!window.MathJax) {window.MathJax = {}}
+if (!window.MathJax) {window.MathJax = {}};
 
 MathJax.isPacked = true;
 
