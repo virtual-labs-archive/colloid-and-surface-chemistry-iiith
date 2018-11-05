@@ -1,0 +1,502 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">COLLOID AND SURFACE CHEMISTRY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Colloid and Surface Chemistry Virtual Labs
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	  <p>
+This lab is about colloidal systems. Milk, butter, ice-cream, body-spray, ink, shaving cream, glue, etc. are a few of numerous examples of colloids. We know that there are three fundamental states of matter: solids, liquids and gases. When matter in one of these states is dispersed in finely divided state in another, it is called a ‘colloidal system’. Importance of colloidal systems cannot be exaggerated. These colloidal systems have interesting properties that are often substantially different from their individual constituents. Colloidal systems find applications in day-to-day life to industry, agriculture, medicine, biological sciences and present-day nanotechnology. Though colloid science has been part of UG and PG curricula for decades, resurgence of interest in it occurred recently due to the emergence of “bottom-up” nanotechnology approach. 
+In a colloidal system, the dispersed phase is the one, which is present in finely divided state and the other continuous medium is known as the dispersion medium or dispersant. Colloidal particles are not visible under ordinary microscopes and pass through the pores of ordinary filter paper. Colloidal solutions are microscopically heterogeneous but macroscopically homogeneous. Colloidal solutions bridge the gap between true solutions (where ions and molecules are dispersed phase) and (coarse) suspensions (which often settle down under gravity). In a colloidal system, the dispersed phase may consist of particles of a single macromolecule (e.g. protein, starch) or an aggregate of many atoms, ions or molecules (e.g. silver colloid, micelle). Although the size of the dispersed phase particles in a colloid is larger than ordinary molecules, they are small enough to remain suspended. The size of dispersed phase particles ranges from one nanometer (10<sup>-9</sup> m) to one micrometer (10<sup>-6</sup> m) or so (Table 1). In certain circumstances, the particles in a colloidal dispersion may form loose aggregates, called flocs (via flocculation) or irreversible aggregates (via coagulation). 
+</p>
+<p>
+<h align="center"> <b> Table 1. Size range of dispersed particles of solutions, colloids and mixtures </b></h> 
+<br>
+<table border="2" align="center">
+<tbody>
+<tr rowspan="3">
+<th align="center">
+<b> MIXTURES </b>
+</th>
+<th align="center">
+<b> COLLOIDS </b>
+</th>
+<th align="center">
+<b> SOLUTIONS </b>
+</th>
+</tr>
+<tr rowspan="3">
+<th align="center">
+<b> Large particles <br>> ~1 &micro;m <b>
+</th>
+<th align="center">
+<b> Tiny Particles <br> 0.001 - ~1 &micro;m </b>
+</th>
+<th align="center">
+<b> Ions and Molecules <br> &lt; 0.001 &micro;m </b>
+</th>
+</tr>
+</tbody>
+</table>
+<br>
+</p>
+<p>
+Colloids are classified in many ways based on their nature, dispersion medium, etc. (Table 2). For example, there are various kinds of colloidal systems that include sols (solids dispersed in liquid), aerosol (liquid in gas), emulsions (liquid in liquid), gel (liquid in solid), association colloids or micelles (assembly of lyophobic-lyophilic molecules dispersed in liquid), etc.
+</p>
+<br>
+<p>
+<h align="center"> <b> Table 2. Types of Colloids and Examples </b></h> 
+
+<table border="1" align="center">
+<caption><b> TYPES OF COLLOIDS </b></caption>
+<tr>
+	<th> DISPERSED PHASE </th>
+	<th> DISPERSANT PHASE </th>
+	<th> NAME </th>
+	<th> EXAMPLE </th>
+</tr>
+<tr>
+	<td> Solid </td>
+	<td> Gas </td>
+	<td> Smoke-Aerosol </td>
+	<td> Smoke </td>
+</tr>
+<tr>
+	<td> Liquid </td>
+	<td> Gas </td>
+	<td> Fog-Aerosol </td>
+	<td> Fog </td>
+</tr>
+<tr>
+	<td> Solid </td>
+	<td> Liquid </td>
+	<td> Sol </td>
+	<td> Paint </td>
+</tr>
+<tr>
+	<td> Liquid </td>
+	<td> Liquid </td>
+	<td> Emulsion </td>
+	<td> Milk, Mayonnaise </td>
+</tr>
+<tr>
+	<td> Gas </td>
+	<td> Liquid </td>
+	<td> Foam </td>
+	<td> Beer foam </td>
+</tr>
+<tr>
+	<td> Solid </td>
+	<td> Solid </td>
+	<td> Solid suspension </td>
+	<td> Amethyst </td>
+</tr>
+<tr>
+	<td> Liquid </td>
+	<td> Solid </td>
+	<td> Solid emulsion, Gel </td>
+	<td> Jelly, Opal </td>
+</tr>
+<tr>
+	<td> Gas </td>
+	<td> Solid </td>
+	<td> Solid foam </td>
+	<td> Pumice stone </td>
+</tr>
+</table>
+</p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/experiments.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Experiments
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+	 <ul class="experiment-list">
+				<li class="experiment-thumb">
+					<a href="exp1/index.html">
+						<strong> Preparation of Sols </strong>
+					</a>
+				</li>
+				<li class="experiment-thumb">
+					<a href="exp2/index.html">
+						<strong> Preparation of Gels </strong>
+					</a>
+				</li>
+				
+				<li class="experiment-thumb">
+					<a href="exp3/index.html">
+						<strong> Demonstration of the Preparation and Use of Association Colloids (Micelles) </strong>
+					</a>
+				</li>
+				
+				<li class="experiment-thumb">
+					<a href="exp14/index.html">
+						<strong> Determination of Critical Micelle Concentration (CMC) of a Surfactant </strong>
+					</a>
+				</li>
+			
+				<li class="experiment-thumb">
+					<a href="exp4/index.html">
+						<strong> Demonstration of the Surface Tension Lowering of Water by Soaps/Detergents </strong>
+					</a>
+				</li>
+				
+				<li class="experiment-thumb">
+					<a href="exp5/index.html">
+						<strong> Demonstration of Tyndall Effect or Tyndall Scattering in Colloidal Systems </strong>
+					</a>
+				</li>
+
+				<li class="experiment-thumb">
+					<a href="exp7/index.html">
+						<strong> Gel Electrophoresis </strong>
+					</a>
+				</li>
+				
+				
+				<!--
+				<li class="experiment-thumb">
+					<strong>Determination of Isoelectric Points of:</strong>
+					<ul type="disc">
+					<li><a href="exp11/index.html">
+						<strong>Oxidic colloidal systems</strong>
+					</a></li>
+					<li><a href="exp12/index.html">
+						<strong>Polymeric colloidal systems</strong>
+					</a></li>
+					</ul>
+				</li>
+				-->
+				
+				<li class="experiment-thumb">
+					<a href="exp8/index.html">
+						<strong> Demonstration of the Surface-Effect on Chemical Properties of Finely Divided Particles </strong>
+					</a>
+				</li>
+				<!--<li class="experiment-thumb">
+					<a href="exp9/index.html">
+						<strong> Principles of Zeta Potential Measurements </strong>
+					</a>
+				</li>
+				<li class="experiment-thumb">
+					<strong>Determination of Zeta Potentials of:</strong>
+					<ul type="disc">
+					<li><a href="exp10/index.html">
+						<strong>Metallic colloidal systems</strong>
+					</a></li>
+					</ul>
+				</li>-->
+				
+				<!--<li class="experiment-thumb">
+					<a href="exp13/index.html">
+						<strong> Design Method of Dynamic Light Scattering for Particle Size Measurements </strong>
+					</a>
+				</li>-->
+
+				<li class="experiment-thumb">
+					<a href="exp15/index.html">
+						<strong> Study of the Catalytic Effects of Finely Divided Particles </strong>
+					</a>
+				</li>
+				
+				<!--
+				
+				<li class="experiment-thumb">
+					<strong>Determination of Particle Size and Size Distribution in:</strong>
+					<ul type="disc">
+					<li><a href="exp14/index.html">
+						<strong>Metallic colloidal systems</strong>
+					</a></li>
+					<li><a href="exp15/index.html">
+						<strong>Polymeric colloidal systems</strong>
+					</a></li>
+					</ul>
+				</li>
+				--!>
+				
+<!--
+				<li class="experiment-thumb">
+					<a href="">
+						<em>Principles of Colloid Particle Size Measurements</em>
+					</a>
+				</li>
+				<li class="experiment-thumb">
+					<a href="">
+						<em>Design Method of Dynamic Light Scattering for Particle Size Measurements</em>
+					</a>
+				</li>
+				<li class="experiment-thumb">
+					<strong>Determination of Zeta Potentials of:</strong>
+					<ul>
+					<li><a href="exp2">
+						<strong>Metallic colloidal systems</strong>
+					</a></li>
+					<li><a href="">
+						<em>Oxidic colloidal systems</em>
+					</a></li>
+					<li><a href="">
+						<em>Polymeric colloidal systems</em>
+					</a></li>
+					</ul>
+				</li>
+				<li class="experiment-thumb">
+					<strong>Determination of Isoelectric Points of:</strong>
+					<ul>
+					<li><a href="">
+						<em>Oxidic colloidal systems</em>
+					</a></li>
+					<li><a href="">
+						<em>Polymeric colloidal systems</em>
+					</a></li>
+					</ul>
+				</li>
+				<li class="experiment-thumb">
+					<strong>Determination of Particle Size and Size Distribution in:</strong>
+					<ul>
+					<li><a href="">
+						<em>Metallic colloidal systems</em>
+					</a></li>
+					<li><a href="">
+						<em>Oxidic colloidal systems</em>
+					</a></li>
+					<li><a href="">
+						<em>Polymeric colloidal systems</em>
+					</a></li>
+					</ul>
+				</li> -->
+			</ul>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/target_audience.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Target Audience
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+	  <ul>
+<li>UG</li>
+<ul>
+<li>-Engineering Chemistry 1st year B. Tech. in Chemical / Materials / IT / Civil / Mech. / Electrical / Textile / Agricultural Engg. ...</li>
+<li>-B. Pharm., Biotech., Biomed. Engg.</li>
+<li>-B. Sc. (Hons.) in Chemistry/Phys./Biol./Biophys.</li>
+</ul>
+
+<li>PG</li>
+<ul>
+<li>-Nanotechnology</li>
+<li>-Chemistry, Chemical/Materials/Biomedical Engg., Biotech & Pharm.</li>
+<li>-Ph. D. Beginners</li>
+</ul>
+</ul>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+	<p>This lab aims to build knowledge of preparation of various kinds of colloidal systems (e.g. sols, gels, assembly colloid) and typical physical and chemical properties (e.g. light scattering, surface charge, zeta potential, particle size) of representative colloidal systems.
+</p>
+	</div>
+	
+      </section>
+
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-2-content" class="content">
+      </div>
+
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>
