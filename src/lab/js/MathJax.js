@@ -21,7 +21,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
+var MathJax = new Object();
 if (!window.MathJax) {window.MathJax = {}}
 
 MathJax.isPacked = true;
