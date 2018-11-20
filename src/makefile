@@ -9,7 +9,7 @@ all:  help-dir
 
 help-dir:
 
-	(touch ${build-dir}/theme-${theme}; rsync -avC --exclude ${mathjax}.zip lab/* lib/* help themes/${theme}/* ${build-dir})
+	(touch ${build-dir}/theme-${theme}; rsync -avC --exclude ${mathjax}.zip lab/* lib/* ../css/ ../images/ help themes/${theme}/* ${build-dir})
 
 
 
