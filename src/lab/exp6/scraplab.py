@@ -5,7 +5,6 @@ def writefile(fname,s,s1,heading):
 	f=open(fname, 'w+')
 	f.write(template)
 	f.seek(0)
-	
 	content = f.read()
 	content=content.replace('Disciplines and Domains',breadcrumb)
 	f.seek(0)
