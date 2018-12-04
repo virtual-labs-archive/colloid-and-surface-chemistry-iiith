@@ -77,8 +77,7 @@ while sectionNumber<=len(sectionno):
 	if not tagger:
 		sectionNumber=sectionNumber+1
 		continue
-	tag1=str(tagger[0].text)	
-	tag1=tag1.strip()
+	tag1=str(tagger[0].text) tag1=tag1.strip()
 	if tag1=='Prerequisite S/W':
 		tag1='Prerequisites'
 	att = ''+'lab-article-section-'+str(sectionNumber)+'-content'
