@@ -34,7 +34,8 @@ def writefile(fname,s,s1,heading):
 	content=f.read()
 	#print content
 	filedata=content.replace('index.html','Introduction.html?domain= Chemical Sciences&lab='+heading)
-	f.seek(0) f.write(filedata)	
+	f.seek(0) 
+f.write(filedata)	
 f=open("template.html",'r')
 template=f.read()
 f=open("content.html",'r')
