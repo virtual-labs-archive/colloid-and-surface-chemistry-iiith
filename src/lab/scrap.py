@@ -34,7 +34,8 @@ def writefile(fname,s,s1,heading):
 	content=f.read()
 	#print content
 	filedata=content.replace('index.html','Introduction.html?domain= Chemical Sciences&lab='+heading)
-	f.seek(0) f.write(filedata)	
+	f.seek(0) 
+f.write(filedata)	
 f=open("template.html",'r')
 template=f.read()
 f=open("content.html",'r')
@@ -60,13 +61,13 @@ while sectionNumber<=len(sectionno):
 	if not tagger:
 		sectionNumber=sectionNumber+1
 		continue
-tag1 =s tr(tagger[0].text)
-	tag1=tag1.strip()
-	print tag1
-	if tag1=='Prerequisite S/W':
-		tag1='Prerequisites'
+tag1 = str(tagger[0].text)
+tag1 = tag1.strip()
+print tag1
+if tag1 == 'Prerequisite S/W':
+    tag1 = 'Prerequisites'
 st += '<a href="'+tag1+'.html?domain= Chemical Sciences"'+' class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">'+tag1+'</h3></a>'sectionNumber=sectionNumber+1
-st+='<a href="Feedback.html?domain=Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>'
+st += '<a href="Feedback.html?domain=Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>'
 sectionNumber=1
 while sectionNumber<=len(sectionno):
 	tag=""
@@ -77,9 +78,9 @@ while sectionNumber<=len(sectionno):
 		sectionNumber=sectionNumber+1
 		continue
 tag1 = str(tagger[0].text)	
-	tag1=tag1.strip() 
-        if tag1=='Prerequisite S/W':
-		tag1='Prerequisites'
+tag1 = tag1.strip() 
+if tag1 == 'Prerequisite S/W':
+    tag1 = 'Prerequisites'
 att ='lab-article-section-'+str(sectionNumber)+'-content'
 	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
 	
