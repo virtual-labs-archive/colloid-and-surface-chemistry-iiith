@@ -66,9 +66,9 @@ print tag1
 if tag1 == 'Prerequisite S/W':
     tag1 = 'Prerequisites'
 st += '<a href="'+tag1+'.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">'+tag1+'</h3></a>'	
-	sectionNumber=sectionNumber+1
-st+='<a href="Feedback.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>'
-sectionNumber=1
+sectionNumber = sectionNumber+1
+st += '<a href="Feedback.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>'
+sectionNumber = 1
 while sectionNumber<=len(sectionno):
 	tag=""
 	tag=""
@@ -78,9 +78,9 @@ while sectionNumber<=len(sectionno):
 		sectionNumber=sectionNumber+1
 		continue 
 tag1 = str(tagger[0].text)	
-	tag1=tag1.strip()
-	if tag1=='Prerequisite S/W':
-		tag1='Prerequisites'
+tag1 = tag1.strip()
+if tag1 == 'Prerequisite S/W':
+    tag1 = 'Prerequisites'
 att = ''+'lab-article-section-'+str(sectionNumber)+'-content'
 	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
 	
