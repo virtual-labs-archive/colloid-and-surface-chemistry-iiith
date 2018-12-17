@@ -55,7 +55,7 @@ while sectionNumber<=len(sectionno):
 	print tag1
 	if tag1=='Prerequisite S/W':
 		tag1='Prerequisites'
-	st+='<a href="'+tag1+'.html"'+'class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600;">'+tag1+'</h3></a>'	
+st += '<a href="'+tag1+'.html"'+'class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600;">'+tag1+'</h3></a>'	
 	sectionNumber=sectionNumber+1
 sectionNumber=1
 while sectionNumber<=len(sectionno):
