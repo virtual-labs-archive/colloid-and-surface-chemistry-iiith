@@ -5,7 +5,6 @@ def writefile(fname,s,s1,heading):
 	f=open(fname, 'w+')
 	f.write(template)
 	f.seek(0)
-	
 	content = f.read()
 	content=content.replace('Disciplines and Domains',breadcrumb)
 	f.seek(0)
@@ -14,8 +13,6 @@ def writefile(fname,s,s1,heading):
 	
 	f.seek(0)
 	content=f.read()
-	k=content.index('<div class="col-md-10 lab-list-col-10">')
-	
 	t1=content.index('<!--edit1-->')
 	print t1
 	f.seek(t1+13)
@@ -61,15 +58,15 @@ while sectionNumber<=len(sectionno):
 	if not tagger:
 		sectionNumber=sectionNumber+1
 		continue
-	tag1=str(tagger[0].text)
-	tag1=tag1.strip()
-	print tag1
-	if tag1=='Prerequisite S/W':
-		tag1='Prerequisites'
-	st+='<a href="'+tag1+'.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">'+tag1+'</h3></a>'	
-	sectionNumber=sectionNumber+1
-st+='<a href="Feedback.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>'
-sectionNumber=1
+tag1 = str(tagger[0].text)
+tag1 = tag1.strip()
+print tag1
+if tag1 == 'Prerequisite S/W':
+    tag1 = 'Prerequisites'
+st += '<a href="'+tag1+'.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">'+tag1+'</h3></a>'
+sectionNumber = sectionNumber+1
+st += '<a href="Feedback.html?domain=Chemical Sciences&lab='+heading1+'" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>'
+sectionNumber = 1
 while sectionNumber<=len(sectionno):
 	tag=""
 	tag=""
@@ -78,47 +75,41 @@ while sectionNumber<=len(sectionno):
 	if not tagger:
 		sectionNumber=sectionNumber+1
 		continue
-	tag1=str(tagger[0].text)	
-	tag1=tag1.strip()
-	if tag1=='Prerequisite S/W':
-		tag1='Prerequisites'
-	att = ''+'lab-article-section-'+str(sectionNumber)+'-content'
-	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
-	
-	tag+=str(tagger[0])
-	#print tag
-	#print st
-	
-	
-	writefile(tag1+'.html',tag,st,heading)
-	#print sectionNumber
-	sectionNumber=sectionNumber+1
-	
-f=open("Feedback.html",'w+')
+tag1 = str(tagger[0].text)
+tag1 = tag1.strip()
+if tag1 == 'Prerequisite S/W':
+    tag1 = 'Prerequisites'
+att = ''+'lab-article-section-'+str(sectionNumber)+'-content'
+tagger = soup.findAll('div', attrs={'id': att, 'class': 'content'})
+tag += str(tagger[0])
+#print tag
+#print st
+writefile(tag1+'.html',tag,st,heading)
+#print sectionNumber
+sectionNumber = sectionNumber+1
+f = open("Feedback.html",'w+')
 f.write(template)
 f.seek(0)
-	
 content = f.read()
-content=content.replace('Disciplines and Domains',breadcrumb)
+content = content.replace('Disciplines and Domains',breadcrumb)
 f.seek(0)
 f.write(content)
 #print content
 f.seek(0)
-content=f.read()
-k=content.index('<div class="col-md-10 lab-list-col-10">')
-	
-t1=content.index('<!--edit1-->')
+content = f.read()
+k = content.index('<div class="col-md-10 lab-list-col-10">')
+t1 = content.index('<!--edit1-->')
 print t1
 f.seek(t1+13)
-st=st+f.read()
+st = st + f.read()
 #print s1
 f.seek(t1+13)
 f.write(st)
 f.seek(0)
-content=f.read()
-t= content.index('<!--edit -->')
+content = f.read()
+t = content.index('<!--edit -->')
 f.seek(t+13)
-s='<h1 class="text-h2-lightblue">'+heading+'</h1>'+'<a href="http://feedback.vlabs.ac.in/">Feedback</a>'
-s=s+f.read()
+s = '<h1 class="text-h2-lightblue">'+heading+'</h1>'+'<a href="http://feedback.vlabs.ac.in/">Feedback</a>'
+s = s + f.read()
 f.seek(t+13)
 f.write(s)
