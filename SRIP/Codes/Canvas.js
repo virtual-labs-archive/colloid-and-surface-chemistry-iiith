@@ -11,3 +11,5 @@ c.font = ' bold 20px Arial';
 	
 c.fillText("Effects of ph on the solution",550,40);
 c.textAlign = "center";
+
+  
