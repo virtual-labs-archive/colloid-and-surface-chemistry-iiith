@@ -14,7 +14,7 @@ var k = 1;
 var intr = setInterval(function() {
   //your code to be executed after 0.1 second
 
-var add = 'C:/srip/colloid-and-surface-chemistry-iiith/pf/'+k+'.png';
+var add = 'C:/srip/colloid-and-surface-chemistry-iiith/project_frames/'+k+'.png';
 function make_base(address)
 {
   base_image = new Image();
