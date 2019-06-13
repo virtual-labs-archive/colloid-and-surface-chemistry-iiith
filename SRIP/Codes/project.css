@@ -1,0 +1,11 @@
+        #bo
+        {
+			margin: 0px;
+        }
+
+        #myCanvas:
+        {
+
+        	border: 1px solid black;
+        	background:white;
+        }
