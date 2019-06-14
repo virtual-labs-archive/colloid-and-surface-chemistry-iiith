@@ -20,13 +20,13 @@ function clearScreen()
 
 
 var c = canvas.getContext('2d');
-var delayInMilliseconds = 10;
+var delayInMilliseconds = 50;
 var k = 1;
 
 var intr = setInterval(function() {
   //your code to be executed after 0.01 second
 
-var add = 'C:/srip/colloid-and-surface-chemistry-iiith/project_frames/'+k+'.png';
+var add = 'C:/srip/colloid-and-surface-chemistry-iiith/new frames/'+'('+k+')'+'.jpg';
 function make_base(address)
 {
   base_image = new Image();
@@ -41,7 +41,7 @@ make_base(add);
 //var myname = "BOB";
 //var mystring = "Hi there "+myname+"!";
 
-if(k > 268)
+if(k > 85)
 {
 
 
@@ -49,7 +49,7 @@ if(k > 268)
 // event
 clear_image(intr);
 //clearScreen();
-make_base('268.png');
+make_base('86.jpg');
 
 canvas.addEventListener('click',coords,false);
 function coords()
@@ -60,12 +60,12 @@ function coords()
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=764;i<=783;i++)
+    for(var i=737;i<=757;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=30;i<=134;i++)
+	for(i=73;i<=195;i++)
 	{
 
 	cy_arr.push(i);
@@ -73,18 +73,18 @@ function coords()
 
 	var n = cx_arr.includes(cx);
 	var z = cy_arr.includes(cy);
-	console.log(n);
+	
 
 	if(n&&z ==true) // new block start
 	{
-	var h = 268;
+	var h = 86;
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = 'C:/srip/colloid-and-surface-chemistry-iiith/project_frames/'+h+'.png';
+	var add2 = 'C:/srip/colloid-and-surface-chemistry-iiith/new frames/'+'('+h+')'+'.jpg';
 	make_base(add2);
 
-	if(h>288){
+	if(h>93){
 
 	 clear_image(intr2);
 
@@ -100,9 +100,108 @@ function coords()
 
 	}
 
+		canvas.addEventListener('click',coords2,false);
+	function coords2(event)
+	{
+      cx = event.clientX;
+      cy = event.clientY;
+     
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=1013;i<=1033;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=462;i<=575;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 94;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'C:/srip/colloid-and-surface-chemistry-iiith/new frames/'+'('+h+')'+'.jpg';
+	make_base(add2);
+
+	if(h>98){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+
+	}
+	canvas.addEventListener('click',coords3,false);
+function coords3(event)
+{
+
+	cx = event.clientX;
+    cy = event.clientY;
+    
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=1013;i<=1033;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=477;i<=587;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 104;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'C:/srip/colloid-and-surface-chemistry-iiith/new frames/'+'('+h+')'+'.jpg';
+	make_base(add2);
+
+	if(h>112){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+
+	}
+
+
 
 }
-coords();
+
+
+}
+
+
+
+
+}
+
 
 }
 
