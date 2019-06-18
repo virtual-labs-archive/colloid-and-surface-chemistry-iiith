@@ -60,7 +60,7 @@ function coords()
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=737;i<=757;i++)
+    for(var i=737;i<=758;i++)
 	{
 	cx_arr.push(i);
 	}
@@ -154,7 +154,7 @@ function coords3(event)
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=1013;i<=1033;i++)
+    for(var i=1013;i<=1034;i++)
 	{
 	cx_arr.push(i);
 	}
