@@ -26,7 +26,7 @@ var k = 1;
 var intr = setInterval(function() {
   //your code to be executed after 0.01 second
 
-var add = '/srip/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+k+')'+'.svg';
+var add = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+k+')'+'.svg';
 function make_base(address)
 {
   base_image = new Image();
@@ -81,7 +81,7 @@ function coords()
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = '/srip/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
+	var add2 = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
 	make_base(add2);
 
 	if(h>93){
@@ -130,7 +130,7 @@ function coords()
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = '/srip/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
+	var add2 = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
 	make_base(add2);
 
 	if(h>98){
@@ -175,7 +175,7 @@ function coords3(event)
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = '/srip/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
+	var add2 = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
 	make_base(add2);
 
 	if(h>112){
