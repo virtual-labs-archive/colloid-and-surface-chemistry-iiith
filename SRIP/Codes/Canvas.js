@@ -20,13 +20,13 @@ function clearScreen()
 
 
 var c = canvas.getContext('2d');
-var delayInMilliseconds = 50;
+var delayInMilliseconds = 70;
 var k = 1;
 
 var intr = setInterval(function() {
   //your code to be executed after 0.01 second
 
-var add = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+k+')'+'.svg';
+var add = 'new_frames/'+'('+k+')'+'.svg';
 function make_base(address)
 {
   base_image = new Image();
@@ -49,13 +49,14 @@ if(k > 85)
 // event
 clear_image(intr);
 //clearScreen();
-make_base('86.jpg');
+make_base('(86).svg');
 
 canvas.addEventListener('click',coords,false);
 function coords()
 {
     cx = event.clientX; // or event.pageX
     cy = event.clientY; // or event.pageY
+
     //alert('x,y = '+ cx + ','+ cy);
 
     var cx_arr = [];
@@ -81,7 +82,7 @@ function coords()
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
 	make_base(add2);
 
 	if(h>93){
@@ -96,12 +97,14 @@ function coords()
 
 
 	},delayInMilliseconds);
-
+    //canvas.removeEventListener('click', coords);
 
 	}
-
-		canvas.addEventListener('click',coords2,false);
-	function coords2(event)
+        
+		
+		
+canvas.addEventListener('click',coords2,false);
+function coords2(event)
 	{
       cx = event.clientX;
       cy = event.clientY;
@@ -130,7 +133,7 @@ function coords()
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
 	make_base(add2);
 
 	if(h>98){
@@ -142,9 +145,9 @@ function coords()
 
 	},delayInMilliseconds);
 
-
+    //canvas.removeEventListener('click', coords2);
 	}
-	canvas.addEventListener('click',coords3,false);
+canvas.addEventListener('click',coords3,false);
 function coords3(event)
 {
 
@@ -175,7 +178,7 @@ function coords3(event)
 	var intr2 = setInterval(function()
 		{
 
-	var add2 = '/colloid-and-surface-chemistry-iiith/new frames/new/'+'('+h+')'+'.svg';
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
 	make_base(add2);
 
 	if(h>112){
@@ -187,18 +190,67 @@ function coords3(event)
 
 	},delayInMilliseconds);
 
+    //canvas.removeEventListener('click', coords3);
+	}
 
+canvas.addEventListener('click',coords4,false);
+function coords4(event)
+{
+
+	cx = event.clientX;
+    cy = event.clientY;
+    
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=477;i<=539;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=507;i<=573;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 113;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>128){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    //canvas.removeEventListener('click', coords4);
 	}
 
 
 
-}
-
 
 }
 
 
 
+
+}
+
+
+}
 
 }
 
