@@ -54,19 +54,19 @@ make_base('(86).svg');
 canvas.addEventListener('click',coords,{once: true});
 function coords()
 {
-    cx = event.clientX; // or event.pageX
-    cy = event.clientY; // or event.pageY
+    cx = event.pageX;
+    cy = event.pageY; // or event.pageY
 
-    alert('x,y = '+ cx + ','+ cy);
+    //alert('x,y = '+ cx + ','+ cy);
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=737;i<=758;i++)
+    for(var i=737;i<=760;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=73;i<=195;i++)
+	for(i=96;i<=226;i++)
 	{
 
 	cy_arr.push(i);
@@ -106,19 +106,19 @@ function coords()
 canvas.addEventListener('click',coords2,{once:true});
 function coords2(event)
 	{
-      cx = event.clientX;
-      cy = event.clientY;
-      alert('x,y = '+ cx + ','+ cy);
+    cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
      
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=1013;i<=1033;i++)
+    for(var i=1013;i<=1035;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=462;i<=575;i++)
+	for(i=470;i<=593;i++)
 	{
 
 	cy_arr.push(i);
@@ -152,18 +152,18 @@ canvas.addEventListener('click',coords3,{once:true});
 function coords3(event)
 {
 
-	cx = event.clientX;
-    cy = event.clientY;
-    alert('x,y = '+ cx + ','+ cy);
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=1013;i<=1034;i++)
+    for(var i=1013;i<=1035;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=477;i<=587;i++)
+	for(i=487;i<=605;i++)
 	{
 
 	cy_arr.push(i);
@@ -194,23 +194,23 @@ function coords3(event)
     //canvas.removeEventListener('click', coords3);
 	}
 //for stopping function from running second time 
-var stop = 0;
+
 canvas.addEventListener('click',coords4,{once:true});
 function coords4(event)
 {
 
-	cx = event.clientX;
-    cy = event.clientY;
-    alert('x,y = '+ cx + ','+ cy);
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=477;i<=539;i++)
+    for(var i=477;i<=543;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=507;i<=573;i++)
+	for(i=520;i<=591;i++)
 	{
 
 	cy_arr.push(i);
@@ -245,18 +245,18 @@ canvas.addEventListener('click',coords5,{once:true});
 function coords5(event)
 {
 
-	cx = event.clientX;
-    cy = event.clientY;
-    alert('x,y = '+ cx + ','+ cy);
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=846;i<=883;i++)
+    for(var i=848;i<=879;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=556;i<=626;i++)
+	for(i=563;i<=626;i++)
 	{
 
 	cy_arr.push(i);
@@ -288,21 +288,44 @@ function coords5(event)
 	}
 
 canvas.addEventListener('click',coords6,{once:true});
+/*cx = event.pageX;
+cy = event.pageY;
+var cx_arr = [];
+var cy_arr = [];
+for(var i=478;i<=542;i++)
+{
+cx_arr.push(i);
+}
+
+for(i=509;i<=592;i++)
+{
+
+cy_arr.push(i);
+}
+
+var n = cx_arr.includes(cx);
+var z = cy_arr.includes(cy);*/
+
+
+/*var e = new jQuery.Event("click");
+e.pageX = 10;
+e.pageY = 10;
+$("#elem").trigger(e);*/
 function coords6(event)
 {
 
-	cx = event.clientX;
-    cy = event.clientY;
-    alert('x,y = '+ cx + ','+ cy);
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
 
     var cx_arr = [];
     var cy_arr = [];
-    for(var i=473;i<=542;i++)
+    for(var i=478;i<=542;i++)
 	{
 	cx_arr.push(i);
 	}
 
-	for(i=407;i<=588;i++)
+	for(i=509;i<=592;i++)
 	{
 
 	cy_arr.push(i);
@@ -332,8 +355,57 @@ function coords6(event)
 
     //canvas.removeEventListener('click', coords4);
 	}
+canvas.addEventListener('click',coords7,{once:false});
+function coords7(event)
+{
 
-// This line to be added inside last function created
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=615;i<=771;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=442;i<=556;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 151;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>156){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    //canvas.removeEventListener('click', coords4);
+	}
+
+
+
+
+}
+
 
 
 }
