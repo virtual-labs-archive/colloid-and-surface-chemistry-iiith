@@ -191,9 +191,9 @@ function coords3(event)
 
 	},delayInMilliseconds);
 
-    //canvas.removeEventListener('click', coords3);
+    
 	}
-//for stopping function from running second time 
+
 
 canvas.addEventListener('click',coords4,{once:true});
 function coords4(event)
@@ -500,7 +500,7 @@ function coords9(event)
 
 	},delayInMilliseconds);
 
-    //canvas.removeEventListener('click', coords4);
+    //only 1st part of testing completed move to the second part.
     canvas.addEventListener('click',coords11,{once:true});
     function coords11(event)
     {
@@ -546,6 +546,198 @@ function coords9(event)
 
     //canvas.removeEventListener('click', coords4);
 	}
+
+	canvas.addEventListener('click',coords12,{once:true});
+	function coords12(event)
+	{
+
+		 cx = event.pageX;
+	    cy = event.pageY;
+	    //alert('x,y = '+ cx + ','+ cy);
+	     
+
+	    var cx_arr = [];
+	    var cy_arr = [];
+	    for(var i=1013;i<=1035;i++)
+		{
+		cx_arr.push(i);
+		}
+
+		for(i=470;i<=593;i++)
+		{
+
+		cy_arr.push(i);
+		}
+
+		var n = cx_arr.includes(cx);
+		var z = cy_arr.includes(cy);
+		
+
+		if(n&&z ==true) // new block start
+		{
+		var h = 241;
+		var intr2 = setInterval(function()
+			{
+
+		var add2 = 'new_frames/'+'('+h+')'+'.svg';
+		make_base(add2);
+
+		if(h>248){
+
+		 clear_image(intr2);
+
+		}
+		else{ h+=1;}
+
+		},delayInMilliseconds);
+
+	    
+		}
+	
+	canvas.addEventListener('click',coords13,{once:true});
+	function coords13(event)
+	{
+
+		cx = event.pageX;
+	    cy = event.pageY;
+	    //alert('x,y = '+ cx + ','+ cy);
+
+	    var cx_arr = [];
+	    var cy_arr = [];
+	    for(var i=1013;i<=1035;i++)
+		{
+		cx_arr.push(i);
+		}
+
+		for(i=487;i<=605;i++)
+		{
+
+		cy_arr.push(i);
+		}
+
+		var n = cx_arr.includes(cx);
+		var z = cy_arr.includes(cy);
+		
+
+		if(n&&z ==true) // new block start
+		{
+		var h = 249;
+		var intr2 = setInterval(function()
+			{
+
+		var add2 = 'new_frames/'+'('+h+')'+'.svg';
+		make_base(add2);
+
+		if(h>256){
+
+		 clear_image(intr2);
+
+		}
+		else{ h+=1;}
+
+		},delayInMilliseconds);
+
+	    
+		}
+	
+
+canvas.addEventListener('click',coords14,{once:true});
+function coords14(event)
+{
+
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=851;i<=873;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=475;i<=581;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 257;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>265){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    //canvas.removeEventListener('click', coords4);
+	}
+
+canvas.addEventListener('click',coords15,{once:true});
+function coords15(event)
+{
+
+	cx = event.pageX;
+    cy = event.pageY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=477;i<=541;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=505;i<=575;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 266;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>276){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    
+	}
+
+}	
+}
+}
+}
+
     }
 
 
@@ -569,7 +761,7 @@ function coords9(event)
 
 	},delayInMilliseconds);
 
-    //canvas.removeEventListener('click', coords4);
+    //Ending first testing event completely
     canvas.addEventListener('click',coords10,{once:true});
     function coords10(event)
     {
