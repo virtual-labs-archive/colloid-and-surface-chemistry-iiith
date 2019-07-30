@@ -300,13 +300,10 @@ for(var i=478;i<=542;i++)
 {
 cx_arr.push(i);
 }
-
 for(i=509;i<=592;i++)
 {
-
 cy_arr.push(i);
 }
-
 var n = cx_arr.includes(cx);
 var z = cy_arr.includes(cy);*/
 
@@ -451,7 +448,7 @@ function coords8(event)
     canvas.removeEventListener('mousedown', coords8);
 	}
 
-canvas.addEventListener('mousedown',coords9,{once:false});
+canvas.addEventListener('click',coords9,{once:false});
 function coords9(event)
 {
 
@@ -504,7 +501,7 @@ function coords9(event)
 	else{ h+=1;}
 
 	},delayInMilliseconds);
-
+    canvas.removeEventListener('click', coords9);
     //only 1st part of testing completed move to the second part.
     canvas.addEventListener('mousedown',coords11,{once:false});
     function coords11(event)
@@ -829,7 +826,7 @@ function coords17(event)
     canvas.removeEventListener('mousedown', coords17);
     
 	}
-canvas.addEventListener('mousedown',coords18,{once:false});
+canvas.addEventListener('click',coords18,{once:false});
 function coords18(event)
 {
 
@@ -871,9 +868,628 @@ function coords18(event)
 	else{ h+=1;}
 
 	},delayInMilliseconds);
-    canvas.removeEventListener('mousedown', coords18);
+    canvas.removeEventListener('click', coords18);
     
 	}
+
+
+
+canvas.addEventListener('mousedown',coords19,{once:false});
+function coords19(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=347;i<=446;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=467;i<=506;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 304;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>371){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    canvas.removeEventListener('mousedown', coords19);
+	}
+
+canvas.addEventListener('click',coords20,{once:false});
+function coords20(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    var cx_alt = [];
+    var cy_alt = [];
+    for(var i=1007;i<=1072;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=544;i<=577;i++)
+	{
+
+	cy_arr.push(i);
+	}
+	for(var i=990;i<=1068;i++)
+	{
+		cx_alt.push(i);
+	}
+    for(var i=570;i<=591;i++)
+    {
+    	cy_alt.push(i);
+    }
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	var m = cx_alt.includes(cx);
+	var g = cy_alt.includes(cy);
+	
+
+	if(n&&z ==true ) // new block start
+	{
+	var h = 372;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>380){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('click', coords20);
+    //only 1st part of testing completed move to the second part.
+    canvas.addEventListener('mousedown',coords21,{once:false});
+    function coords21(event)
+    {
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=737;i<=760;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=96;i<=226;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 381;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>388){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    canvas.removeEventListener('mousedown', coords21);
+	}
+
+	canvas.addEventListener('mousedown',coords22,{once:false});
+	function coords22(event)
+	{
+
+		cx = event.offsetX;
+        cy = event.offsetY;
+	    //alert('x,y = '+ cx + ','+ cy);
+	     
+
+	    var cx_arr = [];
+	    var cy_arr = [];
+	    for(var i=1013;i<=1035;i++)
+		{
+		cx_arr.push(i);
+		}
+
+		for(i=470;i<=593;i++)
+		{
+
+		cy_arr.push(i);
+		}
+
+		var n = cx_arr.includes(cx);
+		var z = cy_arr.includes(cy);
+		
+
+		if(n&&z ==true) // new block start
+		{
+		var h = 389;
+		var intr2 = setInterval(function()
+			{
+
+		var add2 = 'new_frames/'+'('+h+')'+'.svg';
+		make_base(add2);
+
+		if(h>393){
+
+		 clear_image(intr2);
+
+		}
+		else{ h+=1;}
+
+		},delayInMilliseconds);
+        canvas.removeEventListener('mousedown', coords22);
+	    
+		}
+	
+	canvas.addEventListener('mousedown',coords23,{once:false});
+	function coords23(event)
+	{
+
+		cx = event.offsetX;
+        cy = event.offsetY;
+	    //alert('x,y = '+ cx + ','+ cy);
+
+	    var cx_arr = [];
+	    var cy_arr = [];
+	    for(var i=1013;i<=1035;i++)
+		{
+		cx_arr.push(i);
+		}
+
+		for(i=487;i<=605;i++)
+		{
+
+		cy_arr.push(i);
+		}
+
+		var n = cx_arr.includes(cx);
+		var z = cy_arr.includes(cy);
+		
+
+		if(n&&z ==true) // new block start
+		{
+		var h = 394;
+		var intr2 = setInterval(function()
+			{
+
+		var add2 = 'new_frames/'+'('+h+')'+'.svg';
+		make_base(add2);
+
+		if(h>400){
+
+		 clear_image(intr2);
+
+		}
+		else{ h+=1;}
+
+		},delayInMilliseconds);
+
+	    canvas.removeEventListener('mousedown', coords23);
+		}
+	
+
+canvas.addEventListener('mousedown',coords24,{once:false});
+function coords24(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=851;i<=873;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=475;i<=581;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 401;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>409){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    canvas.removeEventListener('mousedown', coords24);
+	}
+
+
+canvas.addEventListener('mousedown',coords25,{once:false});
+function coords25(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=477;i<=541;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=505;i<=575;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 410;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>420){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('mousedown', coords25);
+    
+	}
+canvas.addEventListener('mousedown',coords26,{once:false});
+function coords26(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=849;i<=879;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=561;i<=625;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 421;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>437){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('mousedown', coords26);
+    
+}
+
+canvas.addEventListener('mousedown',coords27,{once:false});
+function coords27(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=412;i<=590;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=477;i<=539;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 438;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>443){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('mousedown', coords27);
+    
+	}
+canvas.addEventListener('mousedown',coords28,{once:false});
+function coords28(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=616;i<=773;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=441;i<=558;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 444;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>446){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('click', coords28);
+    
+	}
+
+
+canvas.addEventListener('mousedown',coords29,{once:false});
+function coords29(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+    
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=347;i<=446;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=467;i<=506;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 447;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>519){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('click', coords29);
+    
+	}
+
+
+
+
+
+}
+
+
+}
+}
+}
+}	
+}
+}
+}
+
+    }
+
+}
+
+	
+	else if(m&&g ==true) // new block start
+	{
+	var h = 522;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>534){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    //Ending first testing event completely
+    canvas.addEventListener('click',coords10,{once:false});
+    function coords10(event)
+    {
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    for(var i=477;i<=541;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=505;i<=575;i++)
+	{
+
+	cy_arr.push(i);
+	}
+
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	
+
+	if(n&&z ==true) // new block start
+	{
+	var h = 534;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>546){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+
+    canvas.removeEventListener('mousedown', coords10);
+	}
+    }
+
+
+	}
+
+
+
+
+}
+
+
+
+
+}
+
 }
 }
 }
