@@ -21,7 +21,7 @@ function clearScreen()
 var c = canvas.getContext('2d');
 
 var delayInMilliseconds = 80;
-var k = 154;
+var k = 155;
 
 var intr = setInterval(function() {
   //your code to be executed after 0.01 second
@@ -83,6 +83,91 @@ function coords1(event)
 
     canvas.removeEventListener('mousedown', coords1);
 	}
+
+
+
+canvas.addEventListener('click',coords9);
+function coords9(event)
+{
+
+	cx = event.offsetX;
+    cy = event.offsetY;
+    //alert('x,y = '+ cx + ','+ cy);
+
+    var cx_arr = [];
+    var cy_arr = [];
+    var cx_alt = [];
+    var cy_alt = [];
+    for(var i=1007;i<=1072;i++)
+	{
+	cx_arr.push(i);
+	}
+
+	for(i=544;i<=577;i++)
+	{
+
+	cy_arr.push(i);
+	}
+	for(var i=990;i<=1068;i++)
+	{
+		cx_alt.push(i);
+	}
+    for(var i=570;i<=591;i++)
+    {
+    	cy_alt.push(i);
+    }
+	var n = cx_arr.includes(cx);
+	var z = cy_arr.includes(cy);
+	var m = cx_alt.includes(cx);
+	var g = cy_alt.includes(cy);
+	
+
+	if(n&&z ==true ) // new block start
+	{
+	var h = 299;
+	var intr2 = setInterval(function()
+		{
+
+	var add2 = 'new_frames/'+'('+h+')'+'.svg';
+	make_base(add2);
+
+	if(h>304){
+
+	 clear_image(intr2);
+
+	}
+	else{ h+=1;}
+
+	},delayInMilliseconds);
+    canvas.removeEventListener('click', coords9);
+}
+
+
+ else if(m&&g ==true) // new block start
+        {
+        var h = 922;
+        var intr2 = setInterval(function()
+                {
+
+        var add2 = 'new_frames/'+'('+h+')'+'.svg';
+        make_base(add2);
+        
+        if(h>950){
+
+         clear_image(intr2);
+
+        }
+        else{ h+=1;}
+
+        },delayInMilliseconds);
+
+        
+
+}
+}
+
+
+
 }
 
 
