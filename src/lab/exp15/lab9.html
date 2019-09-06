@@ -7,6 +7,18 @@
 		html, body { height:100%; background-color: #ffffff;}
 		body { margin:0; padding:0; overflow:hidden; }
 		#flashContent { width:100%; height:100%; }
+
+		#expheading 
+		{
+			display:inline-block;
+		}
+
+		#resetbutton
+		{
+			position:relative;
+			top:-75px;
+			left:25px;
+		}
 		</style>
 <!-- Google Analytics Code starts here -->
 <script>
@@ -19,11 +31,31 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+
+	var interval=125,i=0;
+
+	setInterval(function()
+		{
+			i++;
+			if (i >= 24 && i<=67)
+			{
+				document.getElementById('expheading').style.display = 'none';
+			} 
+			else 
+			{
+				document.getElementById('expheading').style.display = 'inline-block';
+			}
+		},interval);
+
+</script>
+
 <!-- Google Analytics Code ends here -->
 	</head>
 	<body>
 <center>
-<h3>Effects of pH on the solution</h3>
+        <h3 id="expheading">Effects of pH on the solution</h3>
 		<div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="960" height="680" id="lab9" align="middle">
 				<param name="movie" value="lab9.swf" />
@@ -58,7 +90,7 @@
 				</object>
 				<!--<![endif]-->
 			</object>
-			<input type="button" value="RESET" onClick="window.location.reload()">
+			<input id="resetbutton" type="button" value="RESET" onClick="window.location.reload()">
 		</div>
 </center>
 	</body>
